@@ -4,8 +4,8 @@ public class Rocket implements SpaceShip {
     int weight;
     int maxWeight;
     int currentWeight;
-    double launchExplosion;
-    double landingCrash;
+    double launchExplosionChance;
+    double landCrashChance;
 
     // Methods
     public boolean launch() {
