@@ -12,7 +12,9 @@ public class U1 extends Rocket {
     // Methods
     public boolean launch() {
         this.launchExplosionChance = 5.0 * ((double)(this.currentWeight-this.weight) / (double)(this.maxWeight-this.weight));
+        // System.out.println("Launch explosion chance: " + this.launchExplosionChance);
         int randomNumber = (int)(Math.random()*100+1);
+        // System.out.println("Random number: " + randomNumber);
         return randomNumber > this.launchExplosionChance;
     }
 
