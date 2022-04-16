@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Rocket implements SpaceShip {
     // Fields
     int cost;
@@ -6,7 +8,7 @@ public class Rocket implements SpaceShip {
     int currentWeight;
     double launchExplosionChance;
     double landCrashChance;
-
+    ArrayList<Item> itemsCarried;
     // Methods
     public boolean launch() {
         return true;

@@ -1,9 +1,7 @@
 public class Main {
     public static void main(String[] args) throws Exception {
         Simulation simulation = new Simulation();
-
-        // Checking if loadItems method works
-        Item itemFromList = simulation.loadItems("phase-1.txt").get(0);
-        System.out.println(itemFromList.name + " " + itemFromList.weight);
+        //System.out.println(simulation.loadU1(simulation.loadItems("phase-1.txt")).size());
+        System.out.println(simulation.loadU2(simulation.loadItems("phase-1.txt")).size());
     }
 }
